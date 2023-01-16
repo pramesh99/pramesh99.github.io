@@ -1,0 +1,39 @@
+// .card {
+//     border: none !important;
+//     box-shadow: 1px 10px 5px #9E9E9E !important;
+// }
+
+.my-modal{
+    max-height: 90vh;
+}
+
+.modal-content {
+    align-items: center;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.my-modal img{
+    max-height: 90vh;
+    object-fit: cover;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 0px solid slategrey;
+}
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+// TODO:
+// - make typedjs responsive
+// - get rid of card border
+// - rename page compenents with Page suffix
