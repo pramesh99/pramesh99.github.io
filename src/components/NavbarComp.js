@@ -11,7 +11,7 @@ import Pdf from '../files/resume.pdf';
 const NavbarComp = () => {
   return (
     <Router>
-      <Navbar style={{backgroundColor: "#0f1817"}} variant="dark" expand="lg" fixed="top">
+      <Navbar collapseOnSelect={true} style={{backgroundColor: "#0f1817"}} variant="dark" expand="lg" fixed="top">
         <Container>
           <Navbar.Brand as={Link} to={"/"}>PR</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

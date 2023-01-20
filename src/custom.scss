@@ -1,8 +1,3 @@
-// .card {
-//     border: none !important;
-//     box-shadow: 1px 10px 5px #9E9E9E !important;
-// }
-
 .my-modal{
     max-height: 90vh;
 }
@@ -19,21 +14,34 @@
 }
 
 body::-webkit-scrollbar {
-    width: 1em;
+    width: 0.75em;
 }
- 
-body::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-}
- 
+  
 body::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 0px solid slategrey;
+  background: rgb(16, 29, 27);
+  border-radius: 10px;
 }
+
+body::-webkit-scrollbar-thumb:hover{
+    background: #b0d387;
+}
+
+body::-webkit-scrollbar-track {
+    background: #0f1817;
+}
+
+
+$danger: #708855; // Language
+$warning: #324F10; // Library
+$info: #424937; // tool
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
 // TODO:
-// - make typedjs responsive
-// - get rid of card border
-// - rename page compenents with Page suffix
+// - fix tool badge colors DONE
+// - name and icon in tab DONE
+// - image optimization (file type, size, preloading)
+// - github button/upload good code
+// - fix description for chat app
+// - clean up code + annotate
+// - write README

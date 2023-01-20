@@ -25,7 +25,7 @@ const ProjectsComp = () => {
                     <ProjectCard 
                         title={'Track Record'}
                         desc={'Discover your top Spotify artists and song information throughout history'}
-                        tools={['Python', 'Flask', 'HTML', 'MaterializeCSS', 'Spotify API']}
+                        tools={['Python', 'HTML', 'Flask', 'MaterializeCSS', 'Spotify API']}
                         link={'test'}
                     />
                     <ProjectCard 
@@ -46,7 +46,10 @@ const ProjectsComp = () => {
                         tools={['Python', 'pySAT']}
                         link={'test'}
                     />
+                    <br/>
+                    <br/>
                 </Stack>
+
             </Container>
         </div>
     );

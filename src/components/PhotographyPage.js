@@ -4,12 +4,14 @@ import { Container, Card, Col, Row, Image, Modal } from 'react-bootstrap';
 
 const Photography = () => {
     const importAll = (r) => {
+        console.log(r.keys().map(r));
         return r.keys().map(r);
     };
 
     const [images, setImages] = useState([]);
-    useEffect(() => {
+    useEffect(() => { // context(directory, searchSubdirectories?, regex)
         setImages(importAll(require.context('../images/gallery/', false, /\.(png|jpe?g|svg)$/)));
+        //
     }, []);
 
     const [show, setShow] = useState(false);
@@ -24,15 +26,13 @@ const Photography = () => {
             <br/>
             <Container>
                 <Row xs={1} md={3} lg={4} className='g-4'>
-                    {images.map((image,idx) => (
-                        
+                    {images.map((image,idx) => ( 
                         <Col key={image}>
                             <Image 
                                 style={{cursor: 'pointer', height: 450, objectFit: 'cover', borderRadius: '20px'}} 
                                 onClick={() => {setShow(true);setCurrImg(image);}} 
                                 src={image}                      
                                 fluid
-                                loading="lazy"
                             />
                         </Col>
                         
@@ -45,7 +45,8 @@ const Photography = () => {
                         <Image style={{borderRadius:"20px"}} alt='<smth cool here/>' src={currImg}/>
                     </Modal.Body>
                 </Modal>
-                
+                <br/>
+                <br/>
             </Container>
         </div>
     );
