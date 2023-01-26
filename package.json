@@ -4,6 +4,7 @@
   "homepage": "https://pramesh99.github.io",
   "private": true,
   "dependencies": {
+    "@tanstack/react-router": "^0.0.1-beta.57",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",

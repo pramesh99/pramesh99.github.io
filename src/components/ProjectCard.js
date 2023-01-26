@@ -42,7 +42,7 @@ const ProjectCard = (props) => {
                         </Col>
                     </Col>
                     <Col md={3}>
-                        <Button disabled style={{margin:"8px", background: "#b0d387", border: 'none', borderRadius: '40px', color: '#1b1c18'}}>
+                        <Button href={props.link} target='_blank' style={{margin:"8px", background: "#b0d387", border: 'none', borderRadius: '40px', color: '#1b1c18'}}>
                             <FiGithub/>{'\tGithub'}
                         </Button>
                     </Col>

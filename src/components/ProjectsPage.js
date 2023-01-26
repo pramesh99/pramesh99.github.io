@@ -20,31 +20,31 @@ const ProjectsComp = () => {
                         title={'This website'}
                         desc={'My personal portfolio'}
                         tools={['node.js', 'React.js', 'Bootstrap']}
-                        link={'test'}
+                        link={'https://github.com/pramesh99/pramesh99.github.io/tree/master'}
                     />
                     <ProjectCard 
                         title={'Track Record'}
                         desc={'Discover your top Spotify artists and song information throughout history'}
                         tools={['Python', 'HTML', 'Flask', 'MaterializeCSS', 'Spotify API']}
-                        link={'test'}
+                        link={'https://github.com/pramesh99/Track-Record'}
                     />
                     <ProjectCard 
                         title={'Lempel-Ziv compression'}
                         desc={'Implementation of the Lempel-Ziv algorithm using data structures such as tries to losslessly compress text files'}
                         tools={['C']}
-                        link={'test'}
+                        link={'https://github.com/pramesh99/Lempel-Ziv'}
                     />
                     <ProjectCard
                         title={'Chat app'}
                         desc={'Fullstack chat app with users, friends, and message history'}
                         tools={['Java', 'node.js', 'React.js', 'MongoDB']}
-                        link={'test'}
+                        link={'https://github.com/csc-413-04-fall-2022/final-project-team-1'}
                     />
                     <ProjectCard
                         title={'Sudoku solver'}
                         desc={'Sudoku solver that uses a boolean satisfiability algorithm to solve puzzles'}
                         tools={['Python', 'pySAT']}
-                        link={'test'}
+                        link={'https://github.com/pramesh99/SudokuSolver'}
                     />
                     <br/>
                     <br/>

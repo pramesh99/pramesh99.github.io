@@ -18,7 +18,7 @@ const Home = () => {
                     'I\'m a computer science MS student at San Francisco State\n and I enjoy <span style=\'font-weight:bold\'>building things.</span>'
                 ],
                 smartBackspace: true,
-                typeSpeed: 20,
+                typeSpeed: 15,
                 backSpeed: 10,
             };
 
