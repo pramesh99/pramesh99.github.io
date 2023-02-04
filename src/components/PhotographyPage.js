@@ -1,28 +1,29 @@
 import { useEffect, useState } from 'react';
-import { Container, Tab, Tabs, Col, Row, Image, Modal } from 'react-bootstrap';
+import { Container, Col, Row, Image, Modal } from 'react-bootstrap';
 
 const Photography = () => {
     //for modals
     const [show, setShow] = useState(false);
-    const[thumbnails, setThumbnails] = useState([]);
+    const [thumbnails, setThumbnails] = useState([]);
     const [image, setImage] = useState('');
-    const [key, setKey] = useState('home');
 
     const openModal = (idx) => {
+        // padding signle digit numbers with zero to match with file naming
         let x = idx + 1;
         if (x < 10) {
             x = '0'+ x;
         }
-        setImage(require(`../images/gallery/${x}.jpg`));
-        setShow(true);
+        setImage(require(`../images/galleryv2/${x}.jpg`)); // import high res image on selection
+        setShow(true); // only open modal after image is loaded
     }
 
+    // import thumbnails from file
     const importAll = (r) => {
         return r.keys().map(r);
     };
 
+    // import all thumbnails when page is loaded
     useEffect(() => { // context(directory, searchSubdirectories?, regex)
-        console.log('here');
         setThumbnails(importAll(require.context('../images/thumbnails/', false, /\.(png|jpe?g|svg)$/)));
     }, []);
 
@@ -35,6 +36,7 @@ const Photography = () => {
                 <br/>
                 <br/>
                 <br/>
+                {/* map over list of picture filenames and display on page */}
                 <Row xs={1} md={3} lg={4} className='g-4'>
                     {thumbnails.map((thumbnail,idx) => (
                         <Col key={thumbnail}>
@@ -44,7 +46,6 @@ const Photography = () => {
                                 src={thumbnail}                      
                                 fluid
                             />
-                            {/* <h6 style={{color: 'white'}}>{idx}</h6> */}
                         </Col>                       
                     ))}
                 </Row>

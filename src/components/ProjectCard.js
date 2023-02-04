@@ -2,6 +2,7 @@ import {Card, Row, Col, Badge, Button} from 'react-bootstrap';
 import {FiGithub} from 'react-icons/fi'
 
 function getColor (c) {
+    // map tool types to default react-bootstrap colors 
     const color = {
         "Python": "danger",
         "C": "danger",

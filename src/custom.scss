@@ -30,18 +30,9 @@ body::-webkit-scrollbar-track {
     background: #0f1817;
 }
 
-
+// overriding colors for badges on projects page
 $danger: #708855; // Language
 $warning: #324F10; // Library
 $info: #424937; // tool
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
-
-// TODO:
-// - fix tool badge colors DONE
-// - name and icon in tab DONE
-// - image optimization (file type, size, preloading)
-// - github button/upload good code DONE
-// - fix description for chat app
-// - clean up code + annotate
-// - write README

@@ -1,5 +1,5 @@
 import {Nav, Navbar, Container } from 'react-bootstrap';
-import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route, Link, HashRouter} from 'react-router-dom';
 import Home from './HomePage.js';
 import Photography from './PhotographyPage.js';
 import ProjectsComp from './ProjectsPage.js';
@@ -7,7 +7,7 @@ import Pdf from '../files/resume.pdf';
 
 const NavbarComp = () => {
   return (
-    <Router>
+    <HashRouter>
       <Navbar collapseOnSelect={true} style={{backgroundColor: "#0f1817"}} variant="dark" expand="sm" fixed="top">
         <Container>
           <Navbar.Brand as={Link} to={"/"}>PR</Navbar.Brand>
@@ -26,7 +26,7 @@ const NavbarComp = () => {
         <Route path='/photography' element={<Photography/>}/>
         <Route path='/projects' element={<ProjectsComp/>}/>
       </Routes>
-    </Router>
+    </HashRouter>
   );
 }
 
