@@ -38,7 +38,7 @@ const ProjectsComp = () => {
                         title={'Chat app'}
                         desc={'Fullstack chat app with users, friends, and message history'}
                         tools={['Java', 'node.js', 'React.js', 'MongoDB']}
-                        link={'https://github.com/csc-413-04-fall-2022/final-project-team-1'}
+                        link={'https://github.com/pramesh99/Chat-App'}
                     />
                     <ProjectCard
                         title={'Sudoku solver'}
